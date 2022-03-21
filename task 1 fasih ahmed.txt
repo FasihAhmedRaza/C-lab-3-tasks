@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+  int a , b;
+  
+  cout << "enter two values to check which one is greater value" << endl ;
+  cin >> a ;
+  cin >> b ;
+    
+    if( a >= b)
+    cout <<  a  << "greater value"  << endl;
+    
+    if (a == b)
+    cout << a << "is equal to " << b  << endl;
+    
+    
+    else
+    cout <<  "the value of a is less than to b";
+  
+
+    return 0;
+}

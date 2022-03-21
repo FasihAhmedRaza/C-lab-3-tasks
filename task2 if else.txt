@@ -1,0 +1,37 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int age ;
+    int ageinyears;
+    int agemonths;
+    int days = 365 ;
+     int hours ;
+     int choose ;
+cout << "enter your age"<< endl;
+cin >> age ;
+agemonths = age * 12 ;
+hours =  age * 288;
+    cout << "enter your choice for check  ages"<< endl;
+    cout<< "press 1 for check in months"<< endl;
+        cout<< "press 2 for check in days"<< endl;
+            cout<< "press 3 for check in hours"<< endl;
+            
+    cin >> choose ;
+   
+  
+  if (choose == 1)
+  cout << "your age in months is " << agemonths << endl ;
+  else if(choose == 2 )
+  cout << "your age in days is " << ageinyears  << endl;
+     else if(choose == 3 )
+        cout << "your age in hours is " << hours  << endl;
+        
+        else 
+        cout << "pls entre correct value " << endl;
+   
+   return 0 ;
+    
+}
