@@ -1,0 +1,86 @@
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+  int input[100] , count  , i , num ;
+  
+  cout<<"enter number"<<endl;
+  cin>>count;
+  
+  cout<< "enter" << count << "numberr"<<endl;
+  
+  
+  for(i = 0 ; i < count ; i++)
+  {
+      cin>> input[i];
+  }
+
+cout << "enter anumber to serach i array" << endl;
+cin>>num;
+
+
+for(i = 0 ; i <count ; i++){
+    if(input[i] == num){
+        cout<< " Element found at index \n";
+        break;
+    }
+}
+if(i == count)
+{
+    cout<<"element not present in input\n";
+    return 0 ;
+}
+
+
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+  int input[100] , count  , i , num ;
+  
+  cout<<"enter number"<<endl;
+  cin>>count;
+  
+  cout<< "enter" << count << "numberr"<<endl;
+  
+  
+  for(i = 0 ; i < count ; i++)
+  {
+      cin>> input[i];
+  }
+
+cout << "enter anumber to serach i array" << endl;
+cin>>num;
+
+
+for(i = 0 ; i <count ; i++){
+    if(input[i] == num){
+        cout<< " Element found at index \n";
+        break;
+    }
+}
+if(i == count)
+{
+    cout<<"element not present in input\n";
+    return 0 ;
+}
+
+
+    return 0;
+}
