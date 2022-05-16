@@ -1,0 +1,219 @@
+#include <iostream>
+using namespace std;
+
+
+
+int add( int a , int b){
+ 
+    int add;
+    add = a+b;
+
+	return add;
+}
+
+int sub( int a , int b){
+    
+    int sub;
+    sub = a-b;
+
+	return sub;
+}
+
+int multi( int a , int b){
+    
+    int multi;
+    multi = a * b ;
+
+	return multi;
+}
+double divi( double a , double b){
+    
+    double divi;
+    divi = a / b ;
+	return divi;
+}
+
+int swap( int a , int b){
+    
+   int swap;
+   swap = b;
+   b= a;
+   b= swap;
+
+   return swap;
+}
+int swapp( int a , int b){
+    
+   int swapp;
+   swapp = a;
+   a= b;
+   a= swapp;
+
+   return swapp;
+}
+
+
+
+int main(){
+    
+    int a;
+    int b;
+    
+    cout<<"Enter your first Number \n";
+    cin>> a;
+    cout<<"Enter your Second Number \n";
+    cin>>b;
+
+    cout<<"a + b"<< " " <<  " = " <<add (a ,b)<<endl;
+    cout<<"a - b"<< " " <<  " = " <<sub (a ,b)<<endl;
+    cout<<"a * b"<< " " <<  " = " <<multi (a ,b)<<endl;
+    cout<<"a / b"<< " " <<  " = " <<divi (a ,b)<<endl;
+    cout<<"swap of a"<< " " <<  " = " <<swap (a ,b)<<endl;
+    cout<<"swapp of b"<< " " <<  " = " <<swapp (a ,b)<<endl;
+
+	
+    	system("pause");
+    return 0;
+   
+
+}
+	---------------------------------------------------------------------------------------------------------------------------------
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+void display(int a){
+    
+    int per;
+    per = a;
+    
+    cout<<"Percentage "<< per << " %" <<endl;
+    
+    if(per >= 50){
+        cout<<"You are Passed \n";
+    }else{
+        cout<<"you are fail \n";
+    }
+    
+}
+
+
+int main(){
+    int a;
+    cout<<" Enter your marks out of 100 \n";
+    cin>>a;
+    display(a);
+    
+    
+   
+}
+
+------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+
+
+int add( int&  a , int&  b){
+ 
+    int add;
+    add = a+b;
+
+	return add;
+}
+
+int sub( int& a , int&  b){
+    
+    int sub;
+    sub = a-b;
+
+	return sub;
+}
+
+int multi( int&  a , int&  b){
+    
+    int multi;
+    multi = a * b ;
+
+	return multi;
+}
+double divi( double&  a , double&  b){
+    /*
+    double divi;
+    divi = a / b ;*/
+
+	return (a/b);
+}
+// int divi( int&  a , int&  b){
+    
+//     int divi;
+//     divi = a / b ;
+
+// 	return divi;
+// }
+
+int swap( int&  a , int&  b){
+
+
+
+
+
+
+
+
+
+
+    
+   int swap;
+   swap = b;
+   b= a;
+   b= swap;
+
+   return swap;
+}
+int swapp( int&  a , int&  b){
+    
+   int swapp;
+   swapp = a;
+   a= b;
+   a= swapp;
+
+   return swapp;
+}
+
+
+
+int main(){
+    
+    int a;
+    int b;
+    
+    double c, e;
+    
+    c= a;
+    e= b;
+    
+    cout<<"Enter your first Number \n";
+    cin>> a;
+    cout<<"Enter your Second Number \n";
+    cin>>b;
+
+    cout<<"a + b"<< " " <<  " = " <<add (a ,b)<<endl;
+    cout<<"a - b"<< " " <<  " = " <<sub (a ,b)<<endl;
+    cout<<"a * b"<< " " <<  " = " <<multi (a ,b)<<endl;
+    cout<<"a / b"<< " " <<  " = " <<divi (c,e)<<endl;
+    cout<<"swap of a"<< " " <<  " = " <<swap (a ,b)<<endl;
+    cout<<"swapp of b"<< " " <<  " = " <<swapp (a ,b)<<endl;
+
+	
+    system("pause");
+    return 0;
+   
+
+}
+
+	
