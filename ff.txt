@@ -1,0 +1,92 @@
+#include<iostream>
+using namespace std;
+
+
+void comp(int, int);
+void comp(int, int, int);
+void comp(int, int, int, int);
+
+
+int main()
+{
+
+	int num, a, b, c, d;
+	cout << "Enter your choice : \n";
+	cin >> num;
+
+	if (num == 2)
+	{
+		cout << "Enter 2 numbers respectively:" << endl;
+		cin >> a >> b;
+
+		comp(a, b);
+	}
+
+	if (num == 3){
+		cout << "Enter 3 numbers respectively:" << endl;
+		cin >> a >> b >> c;
+		comp(a, b, c);
+	}
+
+	if (num == 4)
+	{
+		cout << "Enter 4 numbers respectively:" << endl;
+		cin >> a >> b >> c >> d;
+		comp(a, b, c, d);
+	}
+
+		system("pause");
+		return 0;
+
+
+}
+
+void comp(int x, int y)
+{
+	if (x > y){
+		cout << x << " is greater and " << y << " is smaller";
+	}
+	else{
+		cout << y << " is greater and " << x << " is smaller";
+	}
+
+
+}
+
+
+void comp(int x, int y, int z){
+
+	if (x > y && y > z){
+		cout << x << " is greater and " << z << " is smaller";
+	}
+	else if (y > z && z > x){
+		cout << y << " is greater and " << x << " is smaller";
+	}
+	else if (z > x && x > y){
+		cout << z << " is greater and " << y << " is smaller";
+	}
+	else{
+		cout << "invalid \n";
+	}
+
+}
+
+
+void comp(int x, int y, int z, int w){
+
+	if (x > y && y > z && z > w){
+		cout << x << " is greater and " << w << " is smaller";
+	}
+	else if (y > z && z > w && w > x){
+		cout << y << " is greater and " << x << " is smaller";
+	}
+	else if (z > w && w > x && x > y){
+		cout << z << " is greater and " << y << " is smaller";
+	}
+	else if (w > x && x > y && y > z){
+		cout << w << " is greater and " << z << " is smaller";
+	}
+	else{
+		cout << "invalid \n";
+	}
+}
