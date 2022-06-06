@@ -1,0 +1,128 @@
+ #include <iostream>
+ using namespace std;
+ 
+ struct triangle{
+ 	
+ 	int p1;
+ 	int p2;
+ 	int p3;
+ };
+ int main(){
+ 	
+ 	triangle tri ;
+ 	cout<<"Enter the three triangle \n";
+ 	cin>> tri.p1 >> tri.p2 >> tri.p3;
+ 	
+ 	if(tri.p1+tri.p2+tri.p3 == 180){
+ 		
+ 		if(tri.p1 ||  tri.p2  ||tri.p3  ==90 ){
+ 			cout<<"It is a right triangle \n";
+ 		}else{
+ 			cout<<"It is not a right triangle \n";
+ 		}
+ 	}
+ 	else{
+ 		cout<<"not a triangle \n";
+ 	}
+ 	
+ 	
+ 	
+ 	
+ }
+
+
+
+-----------------------------------------------------------
+
+
+
+
+ #include <iostream>
+ using namespace std;
+ 
+ struct book{
+ 	
+ 	char name[40];
+ 	int price =0;
+ 	char publisher[100];
+ 	char author[50];
+ 	
+ };
+ int main(){
+ 	
+ 	book b ;
+ 	cout<<" Enter the name \n";
+ 	cin>> b.name;
+ 	cout<<" Enter the publisher \n";
+ 	cin>> b.publisher;
+ 	cout<<" Enter the author \n";
+ 	cin>> b.author;
+ 	cout<<" Enter the price \n";
+ 	cin>> b.price;
+ 	cout<<" ----------Book Details----------"<<endl;
+ 	cout<< "Name ="   <<b.name << endl;
+ 		cout<< " Publisher ="<<b.publisher << endl;
+ 			cout<< " Author ="<<b.author << endl;
+ 				cout << " Price ="<<b.price << endl;
+ 	return 0;
+}
+
+
+--------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+struct employee {
+   int empID =0;
+   char name[50];
+   int salary=0;
+   char department[50];
+};
+int main(){
+    employee e1 ,e2;
+    cout<<"Enter your emp1 ID. \n";
+    cin>> e1.empID;
+     cout<<"Enter your emp1 name \n";
+    cin>> e1.name;
+     cout<<"Enter your emp1 Salary \n";
+    cin>> e1.salary;
+    cout<<"Enter your emp1 department \n";
+    cin>> e1.department;
+    
+    // EMPLOYEE 2
+    cout<<"Pls Enter 2nd Emplyee Details \n";
+     cout<<"Enter your emp2 ID. \n";
+    cin>> e2.empID;
+     cout<<"Enter your  emp2 name \n";
+    cin>> e2.name;
+     cout<<"Enter your emp2  Salary \n";
+    cin>> e2.salary;
+    cout<<"Enter your emp2  department \n";
+    cin>> e2.department;
+    
+    cout<<"========= DETAILS ========="<<endl;
+    cout<<"Employee 1 details \n";
+     cout<<" your employee 1 ID is \n"<< e1.empID << endl;
+      cout<<" your salary. = "<< e1.salary << endl;
+   
+    cout<<" your department. = \n"<< e1.department << endl;
+   
+    cout<<" your name.  ="<<e1.name << endl;
+    
+    cout<< endl;
+    
+      cout<<"Employee 2 details \n";
+     cout<<" your employee 1 ID is \n"<< e2.empID << endl;
+      cout<<" your salary. \n"<< e2.salary << endl;
+   
+    cout<<" your department \n"<< e2.department << endl;
+   
+    cout<<" your name. \n"<<e2.name << endl;
+   
+   
+   return 0;
+    
+   
+}
+
