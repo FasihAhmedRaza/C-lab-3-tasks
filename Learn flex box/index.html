@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fcontainer{
+       display: flex;
+       border:2px solid grey;
+       height: 400px;
+       /* flex-direction: column; */
+       /* flex direction by defaul aik row hoti haaa */
+       justify-content: center;
+       /* for all elements in center  */
+       align-items: center;
+       
+       /* verticaly center  align kardeta haa it actually works in vertical direction*/
+       flex-wrap: wrap;
+       /* for responisve */
+    }
+    .fitem{
+        background-color: rgb(137, 164, 165);
+        border: 4px solid rgb(199, 30, 30);
+        width: 123px;  
+        margin: 12px; 
+        height: 122px;
+         }
+</style>
+<body>
+    
+
+    <div class="fcontainer">
+        <div class="fitem">1</div>
+        <div class="fitem">2</div>
+        <div class="fitem">3</div>
+        <div class="fitem">4</div>
+        <div class="fitem">5</div>
+    </div>
+</body>
+</html>
