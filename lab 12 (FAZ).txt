@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+
+string  a , b ;
+
+cout<<"Enter first String \n";
+cin>>a;
+cout<<"Enter Second String \n";
+cin>>b;
+
+string s =  *(&a) ;
+
+ * (&a) = * (&b);
+* (&b) = * (&s) ;
+
+cout<<" First String = "<< *(&a) <<endl;
+cout<<" Second String = "<< *(&b) <<endl;
+
+
+}
+
+--------------------------------------------------------
+#include <iostream>
+#include <string>
+#define size 100
+using namespace std;
+
+int main()
+{
+
+char text[size];
+
+char *str = text;
+int count = 0;
+
+cout<<"Enter any string  value \n";
+cin>>text;
+
+while(*(str++) != '\0') {
+    count++;
+};
+    
+    cout<<"Length of text =" << text << endl <<  "count = " << count ;
+
+return 0 ;
+}
+
