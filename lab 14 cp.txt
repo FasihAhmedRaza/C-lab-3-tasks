@@ -1,62 +1,94 @@
-#include<iostream>
-#include<fstream>
-#include<string>
+
+#include <iostream>
+#include <fstream>
 using namespace std;
-string student;
-struct student{
-int ID; string name; string department; string email; int phone;
-};
-int main(){
-struct student s;
 
-cout <<"Enter ID:"<< endl;
-cin >> s.ID;
-
-cout <<"Enter Name:"<< endl;
-cin >> s.name;
-
-
-cout <<"Enter Department:"<< endl;
-cin >> s.department;
-
-
-cout <<"Enter Email:"<< endl;
-cin >> s.email;
-
-
-cout <<"Enter Phone:"<< endl;
-cin >> s.phone;
-
-
-ifstream studentfile;
-
-string line;
-studentfile.open("studet.txt");
-
-if( !studentfile.is_open()){
-	cout<<"problem";
+int main () {
+	int id,
+	   phone;
+	string name;
+	string email;
+	string department;
+	char ch;
+  ofstream studentfile ("fasih2.txt", ios::app);
+  {
+    cout<<"ID: ";
+  	cin>>id;
+  	cout<<"Enter Full Name: ";
+  	cin>>name;
+  	cout<<"Enter E-mail: ";
+  	cin>>email;
+  	cout<<"Enter Department: ";
+  	cin>>department;
+    studentfile <<"ID: "<<id<<'\n';
+    studentfile <<"FULL NAME:" <<name<<'\n';
+    studentfile <<"E-MAIL: "<<email<<'\n';
+    studentfile <<"DEPARTMENT: " <<department<<'\n';
+    studentfile.close();
+    cout<<"Want to Enter new record? Press [Y/N]: "<<endl;
+    cin>>ch;
+    
+    if(ch=='y' || 'Y')
+    {
+    	ofstream studentfile ("fasih2.txt", ios::app);
+    	cout<<"ID: ";
+  	cin>>id;
+  	cout<<"Enter Full Name: ";
+  	cin>>name;
+  	cout<<"Enter E-mail: ";
+  	cin>>email;
+  	cout<<"Enter Department: ";
+  	cin>>department;
+  	
+    studentfile <<"ID: "<<id<<'\n';
+    studentfile <<"FULL NAME: " <<name<<'\n';
+    studentfile <<"E-MAIL: "<<email<<'\n';
+    studentfile <<"DEPARTMENT: " <<department<<'\n';
+    studentfile.close();
+    
+    }
+    if(ch=='n' || 'N')
+    {
+    	cout<<"Program Exited"<<endl;
+    }
+  }
+  
+  return 0;
 }
-else{
-studentfile.close();	
+----------------------------------------------------------------------
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () {
+	int id,marks,num;
+	string name;
+	char ch;
+	string b ="B";
+  ofstream studentmarks ("fasih3.txt" ,ios::app);
+  {
+    cout<<"ID: ";
+  	cin>>id;
+  	cout<<"Enter marks: ";
+  	cin>>marks;
+  	cout<<"Enter Full Name: ";
+  	cin>>name;
+  	
+    studentmarks <<"ID: "<<id<<'\n';
+    studentmarks <<"FULL NAME:" <<name<<'\n';
+	studentmarks <<"Marks:" <<marks<<'\n';
+    
+	cout<<"enter number from 0-50"<<endl;
+    cin>>num;
+   
+	studentmarks <<"---------------------------"<<endl;
+    studentmarks <<"ID: "<<id<<'\n';
+    studentmarks <<"FULL NAME:" <<name<<'\n';
+	studentmarks <<"Updated Marks:" <<num<<'\n';
+    
+	studentmarks.close();
+    
+    
+  return 0;
 }
-
-////cout<< studentfile;
-//ofstream studentfile ;
-//studentfile.open("student.txt");
-//cout<<studentfile;
-system("pause");
-return 0;
-
-
 }
-
-
-
-
-
-
-
-#include<iostream>#include<fstream>#include<string>usingnamespacestd;string student;ifstream studentfile("student.txt");charch ='y';structstudent{intID; string name; string department; string email;intphone;};intmain(){structstudent s;do{cout <<"Enter ID:";cin >> s.ID;cout <<"\tEnter Name:";cin >> s.name;//cout << "Enter Name:" <<s.name<< endl;cout <<"\tEnter Department:";cin >> s.department;
-
-
-//cout << "Enter Department:" << s.dep<<endl;cout <<"\tEnter Email:";cin >> s.email;//cout << "Enter Email:" << s.email<<endl;cout <<"\tEnter Phone:";cin >> s.phone;//cout << "Enter Phone:" << s.phone << endl;//declare and open a text fileifstream studentfile;studentfile.open("student.txt");cout <<"enter choice y if more record require";cin >> ch;}while(ch =='y');studentfile.close();system("pause");return0; }
