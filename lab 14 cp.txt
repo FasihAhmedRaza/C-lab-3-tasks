@@ -1,0 +1,62 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+string student;
+struct student{
+int ID; string name; string department; string email; int phone;
+};
+int main(){
+struct student s;
+
+cout <<"Enter ID:"<< endl;
+cin >> s.ID;
+
+cout <<"Enter Name:"<< endl;
+cin >> s.name;
+
+
+cout <<"Enter Department:"<< endl;
+cin >> s.department;
+
+
+cout <<"Enter Email:"<< endl;
+cin >> s.email;
+
+
+cout <<"Enter Phone:"<< endl;
+cin >> s.phone;
+
+
+ifstream studentfile;
+
+string line;
+studentfile.open("studet.txt");
+
+if( !studentfile.is_open()){
+	cout<<"problem";
+}
+else{
+studentfile.close();	
+}
+
+////cout<< studentfile;
+//ofstream studentfile ;
+//studentfile.open("student.txt");
+//cout<<studentfile;
+system("pause");
+return 0;
+
+
+}
+
+
+
+
+
+
+
+#include<iostream>#include<fstream>#include<string>usingnamespacestd;string student;ifstream studentfile("student.txt");charch ='y';structstudent{intID; string name; string department; string email;intphone;};intmain(){structstudent s;do{cout <<"Enter ID:";cin >> s.ID;cout <<"\tEnter Name:";cin >> s.name;//cout << "Enter Name:" <<s.name<< endl;cout <<"\tEnter Department:";cin >> s.department;
+
+
+//cout << "Enter Department:" << s.dep<<endl;cout <<"\tEnter Email:";cin >> s.email;//cout << "Enter Email:" << s.email<<endl;cout <<"\tEnter Phone:";cin >> s.phone;//cout << "Enter Phone:" << s.phone << endl;//declare and open a text fileifstream studentfile;studentfile.open("student.txt");cout <<"enter choice y if more record require";cin >> ch;}while(ch =='y');studentfile.close();system("pause");return0; }
